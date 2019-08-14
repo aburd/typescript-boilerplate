@@ -11,9 +11,12 @@ const resolvedPaths = ['../src/lib', '../packs', '../src', '../../assets'].map(p
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: path.resolve(__dirname, './src/main.tsx'),
+  entry: {
+    main: path.resolve(__dirname, './src/main.tsx'),
+    other: path.resolve(__dirname, './src/other.ts'),
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'target'),
   },
   module: {
