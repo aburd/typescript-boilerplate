@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development ./node_modules/.bin/webpack --watch --colors --config ./webpack.config.js"
+    "start": "NODE_ENV=development ./node_modules/.bin/webpack --watch --colors --config ./webpack.config.js",
+    "serve": "node ./server"
   },
   "keywords": [],
   "author": "",
