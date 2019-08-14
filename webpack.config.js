@@ -10,7 +10,8 @@ plugins.push(
 const resolvedPaths = ['../src/lib', '../packs', '../src', '../../assets'].map(p => path.resolve(__dirname, p))
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/main.ts'),
+  mode: process.env.NODE_ENV,
+  entry: path.resolve(__dirname, './src/main.tsx'),
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'target'),
