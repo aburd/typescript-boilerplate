@@ -13,3 +13,12 @@ $ cd typescript-boilerplate
 $ yarn
 $ yarn start
 ```
+
+### React (TSX)
+
+- Support for typescript (see src/components/App.tsx)
+- Support for SCSS (see src/styles.scss)
+
+### Other
+
+- If you just want to test out something in typescript, checkout src/other.ts
